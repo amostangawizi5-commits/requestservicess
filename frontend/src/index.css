@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #eaf4ff;
+  --bg-alt: #d7eaff;
+  --surface: rgba(241, 248, 255, 0.82);
+  --surface-strong: #f5faff;
+  --border: rgba(95, 131, 177, 0.18);
+  --text: #1f3552;
+  --muted: #5f7898;
+  --accent: #63a8e4;
+  --accent-deep: #cfe5fb;
+  --shadow: 0 24px 60px rgba(52, 89, 130, 0.14);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(191, 223, 255, 0.72), transparent 28%),
+    radial-gradient(circle at right top, rgba(219, 238, 255, 0.65), transparent 24%),
+    linear-gradient(180deg, #f3f9ff 0%, #e8f3ff 42%, #dcecff 100%);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dcecff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(174, 209, 243, 0.95), rgba(132, 181, 230, 0.95));
+  border-radius: 4px;
+}
